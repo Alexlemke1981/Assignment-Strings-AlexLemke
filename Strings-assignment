@@ -1,0 +1,19 @@
+scorer_0 = "Ruud Gullit"
+scorer_1 = "Marco van Basten"
+goal_0 = 32
+goal_1 = 54
+
+scorers = scorer_0 + " " + str(goal_0) + "," + " " + scorer_1 + " " + str(goal_1)
+report = f'{scorer_0} scored in the {goal_0}nd minute\n{scorer_1} scored in the {goal_1}th minute'
+
+
+player = 'Erwin Koeman'
+first_name = player[0:5]
+last_name = player[6:]
+last_name_len = len(last_name)
+first_name_len = len(first_name)
+
+name_short = first_name[0] + ". " + last_name
+chant = (first_name + "! ") * int(first_name_len-1) + (first_name + "!")
+good_chant = chant != last_name_len
+print(good_chant)
